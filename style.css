@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Medium';
+    src: url(Manrope/static/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Manrope/static/Manrope-SemiBold.ttf);
+}
+
+body {
+    --LightCyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    /*
+### Neutral
+*/
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+article {
+    width: 450px;
+    background-color: var(--Dark-Grayish-Blue);
+    margin: auto;
+    border-radius: 12px;
+    padding: 35px 35px 0 35px;
+}
+
+body {
+    background-color: var(--Dark-Blue);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Medium';
+    text-align: center;
+    color: rgb(209, 203, 199);
+}
+
+p {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Roboto';
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 219, 186);
+}
+
+#advice {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    color: var(--LightCyan);
+    padding-bottom: 35px;
+    min-height: 100px;
+    font-family: 'Medium';
+}
+
+.title {
+    color: var(--Neon-Green);
+    text-align: center;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-family: 'Roboto';
+    padding: 10px 0 15px 0;
+}
+
+img[alt="load-img"] {
+    width: 100px;
+}
+
+#btnAdvice {
+    width: 40px;
+    margin: auto;
+    text-align: center;
+    padding: 0.9rem 0.6rem;
+    border-radius: 50%;
+    background-color: var(--Neon-Green);
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+
+#btnAdvice:hover {
+    box-shadow: 0px 0px 70px 30px var(--Neon-Green);
+}
+
+.dice-icon {
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    article {
+        width: 250px;
+    }
+    img[alt='divider'] {
+        width: 250px;
+    }
+}
